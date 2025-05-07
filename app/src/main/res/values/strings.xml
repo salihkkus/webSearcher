@@ -1,3 +1,27 @@
 <resources>
+    <!-- General Application Information -->
     <string name="app_name">webSearcher</string>
+
+    <!-- URL Related Messages -->
+    <string name="hint_enter_url">Enter URL</string>
+    <string name="toast_enter_url">Please enter a URL</string>
+
+    <!-- BottomSheet and Dialog Titles -->
+    <string name="add_link">Add Link</string>
+    <string name="dialog_add_title">Add new bağlantı</string>
+    <string name="dialog_add_button">Add</string>
+    <string name="dialog_cancel_button">Cancel</string>
+    <string name="add_link_content_desc">Add new link</string>
+
+    <!-- Reading Time Format -->
+    <string name="reading_time_format">%1$d min</string>
+
+    <!-- Error Messages -->
+    <string name="toast_error">Error: %1$s</string>
+
+    <!-- Placeholders -->
+    <string name="placeholder_reading_time">5 min</string>
+    <string name="placeholder_title">This long article title can span multiple lines</string>
+
+
 </resources>

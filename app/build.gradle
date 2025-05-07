@@ -34,6 +34,8 @@ dependencies {
     // Glide’ın @GlideModule vs. anotasyonlarını işleyebilmek için
     annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
 
+    implementation 'com.google.android.material:material:1.11.0' // veya en günceli
+
     implementation 'org.jsoup:jsoup:1.15.4'  // add Jsoup
     implementation libs.appcompat
     implementation libs.material

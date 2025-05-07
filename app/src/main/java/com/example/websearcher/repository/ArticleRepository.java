@@ -10,6 +10,9 @@ import java.io.IOException;
 
 public class ArticleRepository {
 
+    // Average wpm here
+    private final double AVERAGE_WPM = 200.0;
+
     /**
      * Returns a title, image URL, and reading time for a given URL.
      */
@@ -43,8 +46,8 @@ public class ArticleRepository {
         // reading time: estimated reading time in minutes
         String text = doc.body().text();
         int wordCount = text.split("\\s+").length;
-        int readingTime = (int) Math.ceil(wordCount / 200.0); // 200 words per minute average
+        int readingTime = (int) Math.ceil(wordCount / AVERAGE_WPM); // Divide wordCount to get reading time in minutes
 
-        return new Article(url,title,imageUrl,readingTime);
+        return new Article(url,title,imageUrl,readingTime, false);
     }
 }

@@ -1,47 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rootLayout"
+    android:id="@+id/rootCoordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".ui.MainActivity">
 
-    <EditText
-        android:id="@+id/editTextUrl"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter article URL" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/buttonFetch"
+        <!-- Link list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewArticles"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="16dp"
+            android:clipToPadding="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:listitem="@layout/item_article" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fetch Article"
-        android:layout_marginTop="8dp" />
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/add_link_content_desc"
+        app:srcCompat="@drawable/ic_add" />
 
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="match_parent"
+    <!-- Get URL input field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/urlInputLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Title will appear here"
-        android:textAppearance="?attr/textAppearanceHeadline6"
-        android:layout_marginTop="16dp" />
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fabAddLink">
 
-    <TextView
-        android:id="@+id/textViewReadingTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Reading time"
-        android:layout_marginTop="8dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageView
-        android:id="@+id/imageViewArticle"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="16dp"
-        android:contentDescription="Article Image" />
-
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -3,14 +3,16 @@ package com.example.websearcher.model;
 public class Article {
     public String url;
     public String title;
-    public String imageUrl;
+    public String iconUrl;
     public int readingTime; // reading time in minutes
+    private boolean isRead; // true if the article has been read
 
-    public Article(String url, String title, String imageUrl, int readingTime) {
+    public Article(String url, String title, String imageUrl, int readingTime, boolean isRead) {
         this.url = url;
         this.title = title;
-        this.imageUrl = imageUrl;
+        this.iconUrl = imageUrl;
         this.readingTime = readingTime;
+        this.isRead = isRead;
     }
 
     public String getUrl() {
@@ -21,6 +23,14 @@ public class Article {
         this.url = url;
     }
 
+    public boolean isRead() {
+        return isRead;
+    }
+
+    public void setRead(boolean read) {
+        isRead = read;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -29,12 +39,12 @@ public class Article {
         this.title = title;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getIconUrl() {
+        return iconUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setIconUrl(String iconUrl) {
+        this.iconUrl = iconUrl;
     }
 
     public int getReadingTime() {
@@ -44,4 +54,8 @@ public class Article {
     public void setReadingTime(int readingTime) {
         this.readingTime = readingTime;
     }
+
+
+
+
 }
