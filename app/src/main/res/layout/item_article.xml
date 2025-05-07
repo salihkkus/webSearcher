@@ -56,7 +56,7 @@
         android:id="@+id/checkBoxRead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:buttonTint="@color/purple_200"
+        android:buttonTint="@color/purple_500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
