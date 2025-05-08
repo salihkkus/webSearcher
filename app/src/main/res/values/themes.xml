@@ -1,11 +1,16 @@
-<resources>
-    <!-- Temel renkler -->
-    <color name="purple_500">#9C27B0</color>
-    <color name="purple_700">#7B1FA2</color>
-    <color name="white">#FFFFFF</color>
-    <color name="teal_200">#80CBC4</color>
-    <color name="teal_700">#00796B</color>
-    <color name="black">#000000</color>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.WebSearcher" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
 
-    <!-- Eğer daha fazla renk eklemek isterseniz, buraya yeni renkler de ekleyebilirsiniz -->
+        <!-- Secondary -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
 </resources>
