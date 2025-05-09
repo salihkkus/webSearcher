@@ -1,0 +1,25 @@
+<resources>
+    <!-- Genel Uygulama Bilgileri -->
+    <string name="app_name">webArayıcı</string>
+
+    <!-- URL İlgili Mesajlar -->
+    <string name="hint_enter_url">URL girin</string>
+    <string name="toast_enter_url">Lütfen bir URL girin</string>
+
+    <!-- BottomSheet ve Dialog Başlıkları -->
+    <string name="add_link">Bağlantı Ekle</string>
+    <string name="dialog_add_title">Yeni bağlantı ekle</string>
+    <string name="dialog_add_button">Ekle</string>
+    <string name="dialog_cancel_button">İptal</string>
+    <string name="add_link_content_desc">Yeni bağlantı ekle</string>
+
+    <!-- Okuma Süresi Formatı -->
+    <string name="reading_time_format">%1$d dk</string>
+
+    <!-- Hata Mesajları -->
+    <string name="toast_error">Hata: %1$s</string>
+
+    <!-- Yer Tutucular -->
+    <string name="placeholder_reading_time">5 dk</string>
+    <string name="placeholder_title">Bu uzun makale başlığı birden fazla satıra yayılabilir</string>
+</resources>
