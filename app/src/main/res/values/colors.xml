@@ -8,4 +8,9 @@
     <color name="colorTextPrimary">#000000</color>
     <color name="colorTextSecondary">#757575</color>
 
+    <color name="swipe_read_background">#4CAF50</color>
+    <color name="swipe_delete_background">#F44336</color>
+
+
+
 </resources>
