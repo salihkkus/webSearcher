@@ -14,7 +14,13 @@
     <color name="colorBackground">#FFFFFF</color>
     <color name="colorTextPrimary">#000000</color>
     <color name="colorTextSecondary">#757575</color>
-    <color name="black">#000000</color>
-    <color name="colorPrimaryDark">#FFFFFF</color>
-    <color name="colorAccent">#000000</color>
+
+
+
+    <color name="swipe_read_background">#4CAF50</color>
+    <color name="swipe_delete_background">#F44336</color>
+
+
+
+ upstream/main
 </resources>
